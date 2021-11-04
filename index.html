@@ -1,0 +1,318 @@
+<html>
+
+<head>
+  <title>Joshua Gladwin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body, html {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Merriweather', serif;
+    }
+
+    .homeContent {
+      min-height: 100%;
+      max-width: 100%;
+      background: url('Josh-bw-ubahn-ls.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+    }
+
+    .meBundestag {
+      min-height: 100%;
+      max-width: 100%;
+      background-image: url('Josh-colour-bundestag.jpeg');
+      border-top: 1px solid #aaaaaa;
+      border-bottom: 1px solid #aaaaaa;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+    }
+
+    .meBrandenburgGate {
+      min-height: 100%;
+      max-width: 100%;
+      background-image: url('Josh-colour-bgate.jpeg');
+      border-top: 1px solid #aaaaaa;
+      border-bottom: 1px solid #aaaaaa;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+    }
+
+    .homeContent .heading {
+      position: absolute;
+      bottom: 20px;
+      margin-left: 50px;
+      /* width: 100%; */
+      display: block;
+    }
+
+    .homeContent .heading h1 {
+      font-family: 'Lora', serif;
+      font-size: 72pt;
+      text-shadow: 2px 2px rgba(0,0,0,.8);
+      color: #ffffff;
+      display: block;
+      margin-bottom: 0;
+    }
+
+    .homeContent .heading h2 {
+      font-family: 'Lora', serif;
+      font-size: 32pt;
+      color: #ffffff;
+      display: inline-block;
+      margin-top: 0;
+    }
+
+    .navbar {
+      position: fixed;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      top: 0;
+      width: 100%;
+      z-index: 9999;
+      font-size: 20pt;
+      text-align: center;
+      font-family: 'Lora', serif;
+      opacity: 0.85;
+      background: #ffffff;
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .navbar li {
+      display: inline-block;
+      width: 200px;
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    #aboutMe, #mySkills, #contactMe, #myProjects {
+      padding-top: 70px;
+      padding-left: 20%;
+      padding-right: 20%;
+      padding-bottom: 70px;
+      position: relative;
+    }
+
+    #mySkills {
+      background-color: #f7f7f7;
+    }
+
+    #aboutMe h1, #mySkills h1, #contactMe h1, #myProjects h1 {
+      font-family: 'Lora', serif;
+      font-size: 36pt;
+      text-align: center;
+      display: block;
+      margin-bottom: 0;
+      color: rgba(0,0,0,.8);
+    }
+
+    #aboutMe p, #mySkills p, #contactMe p, #myProjects p {
+      font-size: 14pt;
+      line-height: 1.9;
+    }
+
+    #mySkills p {
+      padding-left: 20px;
+    }
+
+    #contactMe {
+      text-align: center;
+    }
+
+    #contactMe {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    #contactMe img {
+      margin-right: 25px;
+      margin-left: 25px;
+      margin-top: 40px;
+      width: 70px;
+    }
+
+    #footer {
+      background: #000000;
+      padding: 20px;
+      color: #ffffff;
+    }
+
+    #footer a {
+      color: #ffffff;
+    }
+
+    @media only screen and (max-width: 1680px) {
+      .homeContent {
+        background: url('Josh-bw-ubahn-ls.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .meBundestag {
+        background: url('Josh-colour-bundestag.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    @media only screen and (max-width: 630px) {
+      .navbar li {
+        width: 170px;
+      }
+    }
+
+    @media only screen and (max-width: 530px) {
+      .navbar {
+        font-size: 14pt;
+      }
+
+      .navbar li {
+        width: 100px;
+      }
+
+      .homeContent .heading h1 {
+        font-size: 36pt;
+      }
+
+      .homeContent .heading h2 {
+        font-size: 18pt;
+      }
+
+      #aboutMe h1, #mySkills h1, #contactMe h1 {
+        font-size: 26pt;
+      }
+
+      #aboutMe, #mySkills, #contactMe {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      #aboutMe p, #mySkills p, #contactMe p {
+        font-size: 12pt;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  jQuery(document).ready(function() {
+    jQuery('#aboutMeLink').on('click', function() {
+      jQuery('html, body').animate({
+        scrollTop: jQuery("#aboutMe").offset().top
+      }, 500);
+    });
+
+    jQuery('#mySkillsLink').on('click', function() {
+      jQuery('html, body').animate({
+        scrollTop: jQuery("#mySkills").offset().top
+      }, 500);
+    });
+
+    jQuery('.socialLink').on('click', function() {
+      jQuery('html, body').animate({
+        scrollTop: jQuery("#contactMe").offset().top
+      }, 500);
+    });
+
+    jQuery('#myProjectsLink').on('click', function() {
+      jQuery('html, body').animate({
+        scrollTop: jQuery("#myProjects").offset().top
+      }, 500);
+    });
+  });
+  </script>
+</head>
+<body>
+
+<div class="navbar">
+  <ul>
+    <li id="aboutMeLink">About Me</li>
+    <li id="mySkillsLink">My Skills</li>
+    <li id="myProjectsLink">My Projects</li>
+    <li class="socialLink">Social</li>
+  </ul>
+</div>
+
+<div class="homeContent">
+  <div class="heading">
+    <h1>Joshua Gladwin</h1>
+    <h2>Data Nerd</h2>
+  </div>
+</div>
+
+<div id="aboutMe">
+  <h1>Well hello there!</h1>
+  <p>Welcome to my website. My name's Josh. I'm a Data Nerd and I live in Berlin with my husband Chris and my cat Sulu.</p>
+  <p>I have a diverse academic background, with a Bachelors Degree in Japanese and Chinese (including a year out living in Hokkaido) and a Postgraduate Diploma in Linguistics. I love languages - and I mean <b>LOVE</b> languages. My many bookshelves at home have books from Irish to Korean, Japanese to German and Estonian to Thai!</p>
+  <p>Whether it's languages, numbers, patterns, or whatever - data has always fascinated me. So I decided to make the leap a while back and train in data. I taught myself everything, and now I could really do with helping somebody else with their data needs. If I sound like the sort of person you're looking for, <a class="socialLink" href="#contactMe">please get in touch!</a></p>
+  <p>I like to think I've achieved a lot of things outside of my data interests. My husband and I together developed the LobbyALord platform which helped get the UK's same-sex marriage bill through the House of Lords. It was so effective, we were even <a href="https://www.pinknews.co.uk/2013/08/05/developers-of-out4marriages-lobby-a-lord-website-announce-their-engagement/">thanked by the Prime Minister for it</a>.</p>
+</div>
+
+<div class="meBundestag">
+</div>
+
+<div id="mySkills">
+  <h1>Things I can do</h1>
+  <h2>Beginner</h2>
+  <p>Scikit-learn, TensorFlow, scipy, Seaborn, Natural Language Processing, Java, R, Bokeh, Keras, MATLAB, BigQuery.</p>
+
+  <h2>Lower Intermediate</h2>
+  <p>Folium, IBM Watson Studio, Tableau Public, GitHub.</p>
+
+  <h2>Intermediate</h2>
+  <p>Python, pandas, numpy, matplotlib, Jupyter, dbadmin with MySQL, including SQL queries.</p>
+
+  <h2>Advanced</h2>
+  <p>Excel, comfortable with creating graphic, interactive and informative spreadsheets.</p>
+
+<p>I have done extensive QA testing for the products I've worked on and I pride myself on leaving no stone unturned.
+</div>
+
+<div id="myProjects">
+  <h1>My Projects</h1>
+  <h2>Germany's vaccinations... as a progress bar!</h2>
+  <div style="margin-left: auto; margin-right: auto;">
+    <a href="https://vaccinationprogress.joshuagladwin.de/">
+    <img src="vaccinationprogress.png" style="width: 49%; border: 1px solid black; display: inline;" /></a>
+    <a href="https://vaccinationprogress.joshuagladwin.de/">
+    <img src="vaccinationprogressgraph.png" style="width: 49%; border: 1px solid black; display: inline;" /></a>
+  </div>
+  <p>Recently I've been working on the <a href="https://vaccinationprogress.joshuagladwin.de/">Vaccination Progress</a> site which uses COVID-19 data from the Robert Koch Institute and the Federal Ministry of Health to produce a very simple progress bar for the whole of Germany.</p>
+</div>
+
+<div class="meBrandenburgGate">
+</div>
+
+<div id="contactMe">
+  <h1>Find me elsewhere</h1>
+  <a href="mailto:joshuajgladwin@gmail.com"><img src="gmail.png"></a>
+  <a href="https://www.twitter.com/joshuagladwin"><img src="twitter.png"></a>
+  <a href="https://www.linkedin.com/in/joshuagladwin/"><img src="linkedin.png"></a>
+  <a href="https://github.com/joshuagladwin"><img src="github.png"></a>
+</div>
+
+<div style="clear: both"></div>
+
+<div id="footer">
+  Photos taken by the supremely talented Sascha Reimann. Social media icons by <a href="https://www.iconfinder.com/Flatart">FlatArt.</a><br />
+  <a href="datenschutzerklaerung.php">Datenschutzerkl&#228;rung</a> | <a href="impressum.php">Impressum</a>
+</div>
+
+</body>
+</html>
