@@ -1,215 +1,14 @@
-<html>
+<html lang="en">
 
 <head>
   <title>Joshua Gladwin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body, html {
-      height: 100%;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Merriweather', serif;
-    }
-
-    .homeContent {
-      min-height: 100%;
-      max-width: 100%;
-      background: url('Josh-bw-ubahn-ls.jpeg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: relative;
-    }
-
-    .meBundestag {
-      min-height: 100%;
-      max-width: 100%;
-      background-image: url('Josh-colour-bundestag.jpeg');
-      border-top: 1px solid #aaaaaa;
-      border-bottom: 1px solid #aaaaaa;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: relative;
-    }
-
-    .meBrandenburgGate {
-      min-height: 100%;
-      max-width: 100%;
-      background-image: url('Josh-colour-bgate.jpeg');
-      border-top: 1px solid #aaaaaa;
-      border-bottom: 1px solid #aaaaaa;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: relative;
-    }
-
-    .homeContent .heading {
-      position: absolute;
-      bottom: 20px;
-      margin-left: 50px;
-      /* width: 100%; */
-      display: block;
-    }
-
-    .homeContent .heading h1 {
-      font-family: 'Lora', serif;
-      font-size: 72pt;
-      text-shadow: 2px 2px rgba(0,0,0,.8);
-      color: #ffffff;
-      display: block;
-      margin-bottom: 0;
-    }
-
-    .homeContent .heading h2 {
-      font-family: 'Lora', serif;
-      font-size: 32pt;
-      color: #ffffff;
-      display: inline-block;
-      margin-top: 0;
-    }
-
-    .navbar {
-      position: fixed;
-      margin-top: 0px;
-      margin-bottom: 20px;
-      top: 0;
-      width: 100%;
-      z-index: 9999;
-      font-size: 20pt;
-      text-align: center;
-      font-family: 'Lora', serif;
-      opacity: 0.85;
-      background: #ffffff;
-    }
-
-    .navbar ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .navbar li {
-      display: inline-block;
-      width: 200px;
-      opacity: 1;
-      cursor: pointer;
-    }
-
-    #aboutMe, #mySkills, #contactMe, #myProjects {
-      padding-top: 70px;
-      padding-left: 20%;
-      padding-right: 20%;
-      padding-bottom: 70px;
-      position: relative;
-    }
-
-    #mySkills {
-      background-color: #f7f7f7;
-    }
-
-    #aboutMe h1, #mySkills h1, #contactMe h1, #myProjects h1 {
-      font-family: 'Lora', serif;
-      font-size: 36pt;
-      text-align: center;
-      display: block;
-      margin-bottom: 0;
-      color: rgba(0,0,0,.8);
-    }
-
-    #aboutMe p, #mySkills p, #contactMe p, #myProjects p {
-      font-size: 14pt;
-      line-height: 1.9;
-    }
-
-    #mySkills p {
-      padding-left: 20px;
-    }
-
-    #contactMe {
-      text-align: center;
-    }
-
-    #contactMe {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-
-    #contactMe img {
-      margin-right: 25px;
-      margin-left: 25px;
-      margin-top: 40px;
-      width: 70px;
-    }
-
-    #footer {
-      background: #000000;
-      padding: 20px;
-      color: #ffffff;
-    }
-
-    #footer a {
-      color: #ffffff;
-    }
-
-    @media only screen and (max-width: 1680px) {
-      .homeContent {
-        background: url('Josh-bw-ubahn-ls.jpeg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-
-      .meBundestag {
-        background: url('Josh-colour-bundestag.jpeg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-    }
-
-    @media only screen and (max-width: 630px) {
-      .navbar li {
-        width: 170px;
-      }
-    }
-
-    @media only screen and (max-width: 530px) {
-      .navbar {
-        font-size: 14pt;
-      }
-
-      .navbar li {
-        width: 100px;
-      }
-
-      .homeContent .heading h1 {
-        font-size: 36pt;
-      }
-
-      .homeContent .heading h2 {
-        font-size: 18pt;
-      }
-
-      #aboutMe h1, #mySkills h1, #contactMe h1 {
-        font-size: 26pt;
-      }
-
-      #aboutMe, #mySkills, #contactMe {
-        padding-left: 5%;
-        padding-right: 5%;
-      }
-
-      #aboutMe p, #mySkills p, #contactMe p {
-        font-size: 12pt;
-      }
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="styles.css?id=1"/>
+  <link rel="stylesheet" type="text/css" href="openmoji-awesome.css?id=2"/>
   <link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <script>
   jQuery(document).ready(function() {
     jQuery('#aboutMeLink').on('click', function() {
@@ -245,43 +44,106 @@
     <li id="aboutMeLink">About Me</li>
     <li id="mySkillsLink">My Skills</li>
     <li id="myProjectsLink">My Projects</li>
-    <li class="socialLink">Social</li>
+    <li class="socialLink">Contact</li>
   </ul>
 </div>
 
 <div class="homeContent">
   <div class="heading">
     <h1>Joshua Gladwin</h1>
-    <h2>Data Nerd</h2>
+    <h2>Junior Python Developer</h2>
   </div>
 </div>
 
 <div id="aboutMe">
   <h1>Well hello there!</h1>
-  <p>Welcome to my website. My name's Josh. I'm a Data Nerd and I live in Berlin with my husband Chris and my cat Sulu.</p>
-  <p>I have a diverse academic background, with a Bachelors Degree in Japanese and Chinese (including a year out living in Hokkaido) and a Postgraduate Diploma in Linguistics. I love languages - and I mean <b>LOVE</b> languages. My many bookshelves at home have books from Irish to Korean, Japanese to German and Estonian to Thai!</p>
-  <p>Whether it's languages, numbers, patterns, or whatever - data has always fascinated me. So I decided to make the leap a while back and train in data. I taught myself everything, and now I could really do with helping somebody else with their data needs. If I sound like the sort of person you're looking for, <a class="socialLink" href="#contactMe">please get in touch!</a></p>
-  <p>I like to think I've achieved a lot of things outside of my data interests. My husband and I together developed the LobbyALord platform which helped get the UK's same-sex marriage bill through the House of Lords. It was so effective, we were even <a href="https://www.pinknews.co.uk/2013/08/05/developers-of-out4marriages-lobby-a-lord-website-announce-their-engagement/">thanked by the Prime Minister for it</a>.</p>
+  <p>Welcome to my website! My name's Josh. I'm a Junior Python Developer and all-round Geek.
+    I live in Berlin with my husband Chris and &nbsp
+    <span class="mytooltip tooltip-effect-1">
+      <span class="tooltip-item">my cat Sulu.</span>
+      <span class="tooltip-content clearfix">
+          <img src="sulu.jpg" alt="Photo of my cat, Sulu, sat upright like a person, lounging back on the sofa, like a Roman Emperor.">
+      </span>
+  </span>
+  </p>
+  <p>I've been coding in Python for the past few years and I'm eager to show you what I can do! With my background in languages and linguistics,
+    I've a strong interest in the interface between tech and language - I'm fascinated by Natural Language Processing - it's one of the core reasons
+    I recently started a MSc in Artificial Intelligence. I've studied many different languages over the years, either academically or for fun.
+    Trying to figure out how and why a language is the way it is is always an extremely fun puzzle.</p>
+
+  <p>I'm extremely curious about the world around us and I'm no stranger to throwing myself into new subjects.
+    I'm big STEM nerd and I'm always reading up about the latest discoveries in Biology, Chemistry, Medicine and Physics.
+    In particular, I've been obsessed with Space Science since I was a kid and enjoy learning about it in all its many forms,
+    from Astrobiology to Xenolinguistics. One of my earliest leads into programming was trying to implement scientific equations in Python.</p>
+
+  <p>Outside tech, languages and STEM, I'm passionate about getting involved in my community and trying to make the world a better place.
+    My husband and I developed the LobbyALord platform which helped get the UK's same-sex marriage bill through the House of Lords.
+    It was so effective, <a href="https://www.pinknews.co.uk/2013/08/05/developers-of-out4marriages-lobby-a-lord-website-announce-their-engagement/">thanked by the Prime Minister for it.</a>
+    I'm politically active - I was heavily involved in the campaign to keep the UK in the EU, running a campaign hub in Central London on the day of the referendum.
+    I also deeply care about LGBT+ and Mental Health issues.</p>
+
+  <p>If I sound like the sort of person you're looking for, <a class="socialLink" href="#contactMe">please get in touch!</a></p>
+
 </div>
 
 <div class="meBundestag">
 </div>
 
 <div id="mySkills">
-  <h1>Things I can do</h1>
-  <h2>Beginner</h2>
-  <p>Scikit-learn, TensorFlow, scipy, Seaborn, Natural Language Processing, Java, R, Bokeh, Keras, MATLAB, BigQuery.</p>
-
-  <h2>Lower Intermediate</h2>
-  <p>Folium, IBM Watson Studio, Tableau Public, GitHub.</p>
-
-  <h2>Intermediate</h2>
-  <p>Python, pandas, numpy, matplotlib, Jupyter, dbadmin with MySQL, including SQL queries.</p>
-
-  <h2>Advanced</h2>
-  <p>Excel, comfortable with creating graphic, interactive and informative spreadsheets.</p>
-
-<p>I have done extensive QA testing for the products I've worked on and I pride myself on leaving no stone unturned.
+  <h1>My Skills</h1>
+  <div class="row">
+    <div class="column">
+      <h1>Tech</h1>
+        <h2><i class="oma oma-snake oma-2x"></i> Python</h2>
+          <h3><i class="oma oma-package oma-2x"></i> Packages & Libraries:</h3>
+          NumPy, Pandas, Matplotlib, Plotly, scikit-learn, NLTK, spaCy, SciPy, Astropy, Scrapy
+          <h3><i class="oma oma-globe-with-meridians oma-2x"></i> Web Frameworks:</h3>
+          Django
+          <h3><i class="oma oma-code-editor oma-2x"></i> IDEs:</h3>
+          Pycharm, Jupyter Notebook, Spyder
+        <h2><i class="oma oma-file-cabinet oma-2x"></i> Databases</h2>
+          MySQL, PostgreSQL, SQLite, MongoDB
+        <h2><i class="oma oma-wireframes oma-2x"></i> Web Development</h2>
+          HTML, CSS, Javascript
+        <h2><i class="oma oma-toolbox oma-2x"></i> Other</h2>
+          Git, R, Excel, Tableau, MATLAB
+    </div>
+    <div class="column">
+      <h1>Language</h1>
+        <h2><i class="oma oma-interview oma-2x"></i> Languages</h2>
+        <div>
+          <p><i class="oma oma-flag-united-kingdom oma-3x"></i><strong> (British) English</strong><br>
+          Level: <i class="oma oma-black-circle oma-lg"></i>
+          <i class="oma oma-black-circle oma-lg"></i>
+          <i class="oma oma-black-circle oma-lg"></i></p>
+        </div>
+        <div>
+          <p><i class="oma oma-flag-france oma-3x"></i><strong> French</strong><br>
+          Level: <i class="oma oma-black-circle oma-lg"></i>
+          <i class="oma oma-black-circle oma-lg"></i>
+          <i class="oma oma-white-circle oma-lg"></i></p>
+        </div>
+        <div>
+          <p><i class="oma oma-flag-germany oma-3x"></i><strong> German</strong><br>
+          Level: <i class="oma oma-black-circle oma-lg"></i>
+          <i class="oma oma-black-circle oma-lg"></i>
+          <i class="oma oma-white-circle oma-lg"></i></p>
+        </div>
+        <div>
+          <p><i class="oma oma-flag-japan oma-3x"></i><strong> Japanese</strong><br>
+          Level: <i class="oma oma-black-circle oma-lg"></i>
+          <i class="oma oma-circle-with-left-half-black oma-lg"></i>
+          <i class="oma oma-white-circle oma-lg"></i></p>
+        </div>
+        <div>
+          <p><i id="cf" class="oma oma-flag-china oma-3x"></i>
+          <i class="oma oma-flag-taiwan oma-3x"></i><strong> Mandarin Chinese</strong><br>
+          Level: <i class="oma oma-black-circle oma-lg"></i>
+          <i class="oma oma-circle-with-left-half-black oma-lg"></i>
+          <i class="oma oma-white-circle oma-lg"></i></p>
+        </div>
+    </div>
+  </div>
 </div>
 
 <div id="myProjects">
@@ -289,9 +151,9 @@
   <h2>Germany's vaccinations... as a progress bar!</h2>
   <div style="margin-left: auto; margin-right: auto;">
     <a href="https://vaccinationprogress.joshuagladwin.de/">
-    <img src="vaccinationprogress.png" style="width: 49%; border: 1px solid black; display: inline;" /></a>
+    <img src="Progress Bar.png" style="width: 49%; border: 1px solid black; display: inline;" alt="Two blue progress bars, showing the percentages of people partially and fully vaccinated in Germany."/></a>
     <a href="https://vaccinationprogress.joshuagladwin.de/">
-    <img src="vaccinationprogressgraph.png" style="width: 49%; border: 1px solid black; display: inline;" /></a>
+    <img src="Line Graph.png" style="width: 49%; border: 1px solid black; display: inline;" alt="A line graph showing how the number of vaccinations in Germany has evolved over time."/></a>
   </div>
   <p>Recently I've been working on the <a href="https://vaccinationprogress.joshuagladwin.de/">Vaccination Progress</a> site which uses COVID-19 data from the Robert Koch Institute and the Federal Ministry of Health to produce a very simple progress bar for the whole of Germany.</p>
 </div>
@@ -300,18 +162,28 @@
 </div>
 
 <div id="contactMe">
-  <h1>Find me elsewhere</h1>
-  <a href="mailto:joshuajgladwin@gmail.com"><img src="gmail.png"></a>
-  <a href="https://www.twitter.com/joshuagladwin"><img src="twitter.png"></a>
-  <a href="https://www.linkedin.com/in/joshuagladwin/"><img src="linkedin.png"></a>
-  <a href="https://github.com/joshuagladwin"><img src="github.png"></a>
+  <h1>Contact me!</h1>
+  <a href="gmail"
+   rel="nofollow"
+   onclick="this.href='mailto:' + 'joshuajgladwin' + '@' + 'gmail.com'"><img src="gmail.png" alt="The Gmail logo"></a>
+  <a href="twitter"
+   rel="nofollow"
+   onclick="this.href='https://www.twitter.com/' + 'joshuagladwin'"><img src="twitter.png" alt="The Twitter logo"></a>
+  <a href="linkedIn"
+   rel="nofollow"
+   onclick="this.href='https://www.linkedin.com/in/' + 'joshuagladwin'"><img src="linkedin.png" alt="The LinkedIn logo"></a>
+  <a href="gitHub"
+   rel="nofollow"
+   onclick="this.href='https://github.com/' + 'joshuagladwin'"><img src="github.png" alt="The GitHub logo"></a>
 </div>
 
 <div style="clear: both"></div>
 
 <div id="footer">
-  Photos taken by the supremely talented Sascha Reimann. Social media icons by <a href="https://www.iconfinder.com/Flatart">FlatArt.</a><br />
-  <a href="datenschutzerklaerung.php">Datenschutzerkl&#228;rung</a> | <a href="impressum.php">Impressum</a>
+  <p>Made in Berlin. <i class="oma oma-berlin-flag oma-3x"></i><i class="oma oma-rainbow-flag oma-3x"></i><i class="oma oma-trans-flag oma-3x"></i><i class="oma oma-federation-flag oma-3x"></i></p>
+  <p>Photos taken by the supremely talented Sascha Reimann.
+  Social media icons by <a href="https://www.iconfinder.com/Flatart">FlatArt</a>. All emojis designed by <a href="https://openmoji.org/">OpenMoji</a>.</p>
+  <p><a href="datenschutzerklaerung.html">Datenschutzerkl&#228;rung</a> | <a href="impressum.html">Impressum</a></p>
 </div>
 
 </body>
