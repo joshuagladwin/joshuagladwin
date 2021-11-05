@@ -45,7 +45,6 @@ body {
   position: absolute;
   bottom: 20px;
   margin-left: 50px;
-  /* width: 100%; */
   display: block;
 }
 
@@ -111,13 +110,6 @@ body {
   clear: both;
 }
 
-@media screen and (max-width: 530px) {
-  .column {
-    width: 100%;
-  }
-}
-
-
 #aboutMe, #mySkills, #contactMe, #myProjects {
   padding-top: 70px;
   padding-left: 20%;
@@ -168,6 +160,45 @@ body {
 
 #footer a {
   color: #ffffff;
+}
+
+.tooltip {
+  display: inline;
+  position: absolute;
+  z-index: 1
+}
+
+.tooltip .tooltip-item {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: inline-block;
+}
+
+.tooltip .tooltip-content {
+  position: absolute;
+  z-index: 1;
+  left: -150%;
+  bottom: 160%;
+  opacity: 0;
+  pointer-events: none
+}
+
+.tooltip .tooltip-content img {
+  position: relative;
+  height: auto;
+  max-width: 150%;
+  box-shadow: 5px 5px 5px #696969;
+  display: inline-block;
+}
+
+.tooltip:hover .tooltip-item::after {
+  pointer-events: auto
+}
+
+.tooltip:hover .tooltip-content {
+  pointer-events: auto;
+  display: inline-block;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 1680px) {
@@ -221,53 +252,13 @@ body {
   #aboutMe p, #mySkills p, #contactMe p {
     font-size: 12pt;
   }
+
+  .tooltip img {
+    width: 100%;
+  }
+
+  .column {
+    width: 100%;
+  }
 }
 
-.mytooltip {
-    display: inline;
-    position: absolute;
-    z-index: 1
-}
-
-@media only screen and (max-width: 992px)
-.mytooltip{
-    display: none;
-}
-
-.mytooltip .tooltip-item {
-    background: rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    display: inline-block;
-}
-
-@media only screen and (max-width: 992px)
-.mytooltip .tooltip-item{
-    display: none;
-}
-
-.mytooltip .tooltip-content {
-    position: absolute;
-    z-index: 1;
-    left: -150%;
-    bottom: 160%;
-    background: #696969;
-    opacity: 0;
-    pointer-events: none
-}
-
-.mytooltip .tooltip-content img {
-    position: relative;
-    height: auto;
-    max-width: 150%;
-    box-shadow: 5px 5px 5px #696969;
-    display: inline-block;
-}
-
-.mytooltip:hover .tooltip-item::after {
-    pointer-events: auto
-}
-
-.mytooltip:hover .tooltip-content {
-    pointer-events: auto;
-    opacity: 1;
-}
