@@ -10,7 +10,7 @@ body {
 .homeContent {
   min-height: 100%;
   max-width: 100%;
-  background: url('Josh-bw-ubahn-ls.jpeg');
+  background: url('images/photos/josh-bw-ubahn.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -20,7 +20,7 @@ body {
 .meBundestag {
   min-height: 100%;
   max-width: 100%;
-  background-image: url('Josh-colour-bundestag.jpeg');
+  background-image: url('images/photos/josh-colour-bundestag.jpeg');
   border-top: 1px solid #aaaaaa;
   border-bottom: 1px solid #aaaaaa;
   background-size: cover;
@@ -32,7 +32,7 @@ body {
 .meBrandenburgGate {
   min-height: 100%;
   max-width: 100%;
-  background-image: url('Josh-colour-bgate.jpeg');
+  background-image: url('images/photos/josh-colour-bgate.jpeg');
   border-top: 1px solid #aaaaaa;
   border-bottom: 1px solid #aaaaaa;
   background-size: cover;
@@ -203,14 +203,14 @@ body {
 
 @media only screen and (max-width: 1680px) {
   .homeContent {
-    background: url('Josh-bw-ubahn-ls.jpeg');
+    background: url('images/photos/josh-bw-ubahn.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .meBundestag {
-    background: url('Josh-colour-bundestag.jpeg');
+    background: url('images/photos/josh-colour-bundestag.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -262,3 +262,16 @@ body {
   }
 }
 
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/merriweather-v28-latin-ext_latin-regular.woff2') format('woff2'); /* Super Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/lora-v23-latin-ext_latin-700.woff2') format('woff2'); /* Super Modern Browsers */
+}
